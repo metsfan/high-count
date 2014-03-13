@@ -7,6 +7,7 @@
 //
 
 #import "HCViewController.h"
+#import "HCGameView.h"
 
 @interface HCViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view addSubview:[[HCGameView alloc] initWithFrame:self.view.frame]];
 }
 
 - (void)didReceiveMemoryWarning
