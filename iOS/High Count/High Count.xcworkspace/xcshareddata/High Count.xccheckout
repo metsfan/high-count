@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>93E62549-D049-45A1-B722-86646F0B44E6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>High Count</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3E0EF779-8D41-4AE7-9E26-F00EB2F029AF</key>
+		<string>ssh://bitbucket.org/citymaps/citymaps-ios-map-library</string>
+		<key>62A61B0E-0E08-4226-B4FE-12E04005A511</key>
+		<string>https://github.com/metsfan/high-count</string>
+		<key>AE8545B1-30E7-405E-BE3D-D9A158DFA0AB</key>
+		<string>ssh://bitbucket.org/citymaps/MapEngineLibrary.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/High Count/High Count.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3E0EF779-8D41-4AE7-9E26-F00EB2F029AF</key>
+		<string>../../../../../SDKs/citymaps-ios-map-library</string>
+		<key>62A61B0E-0E08-4226-B4FE-12E04005A511</key>
+		<string>../../..</string>
+		<key>AE8545B1-30E7-405E-BE3D-D9A158DFA0AB</key>
+		<string>../../../../core-ios-client/MapEngineLibrary</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/metsfan/high-count</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>62A61B0E-0E08-4226-B4FE-12E04005A511</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3E0EF779-8D41-4AE7-9E26-F00EB2F029AF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>citymaps-ios-map-library</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>62A61B0E-0E08-4226-B4FE-12E04005A511</string>
+			<key>IDESourceControlWCCName</key>
+			<string>high-count</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AE8545B1-30E7-405E-BE3D-D9A158DFA0AB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MapEngineLibrary</string>
+		</dict>
+	</array>
+</dict>
+</plist>
