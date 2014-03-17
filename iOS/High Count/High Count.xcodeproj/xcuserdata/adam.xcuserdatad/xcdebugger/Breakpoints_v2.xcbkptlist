@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../GameCode/Controllers/GameBoardController.cpp"
+            timestampString = "416675297.129109"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "GameBoardController::Update(int deltaMillis)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../GameCode/Render/RoundRectRenderer.cpp"
+            timestampString = "416677466.210675"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "RoundRectRenderer::DrawRect(IGraphicsDevice *device, RenderState &amp;state, ROUND_RECT_DESC &amp;desc)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "highcount::RoundRectRenderer::DrawRect(citymaps::IGraphicsDevice*, citymaps::RenderState&amp;, highcount::ROUND_RECT_DESC&amp;)"
+                  moduleName = "High Count"
+                  urlString = "file://localhost/Users/adam/Documents/Projects/high-count/GameCode/Render/RoundRectRenderer.cpp"
+                  timestampString = "416677321.690709"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "478">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "highcount::RoundRectRenderer::DrawRect(citymaps::IGraphicsDevice*, citymaps::RenderState&amp;, highcount::ROUND_RECT_DESC&amp;)"
+                  moduleName = "High Count"
+                  urlString = "file://localhost/Users/adam/Documents/Projects/high-count/GameCode/Render/RoundRectRenderer.cpp"
+                  timestampString = "416677321.691172"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "620">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../GameCode/Render/RoundRectRenderer.cpp"
+            timestampString = "416677466.210675"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "RoundRectRenderer::DrawRect(IGraphicsDevice *device, RenderState &amp;state, ROUND_RECT_DESC &amp;desc)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../GameCode/Render/RoundRectRenderer.cpp"
+            timestampString = "416680680.41487"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "RoundRectRenderer::DrawRect(IGraphicsDevice *device, RenderState &amp;state, ROUND_RECT_DESC &amp;desc)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../SDKs/citymaps-ios-map-library/CitymapsEngine.framework/Headers/Core/Application.inl"
+            timestampString = "416678576.354844"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "416"
+            endingLineNumber = "416"
+            landmarkName = "LoadEffectsConfig(const std::string &amp;resourceName)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../GameCode/Render/RoundRectRenderer.cpp"
+            timestampString = "416677950.365833"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "RoundRectRenderer::DrawRect(IGraphicsDevice *device, RenderState &amp;state, ROUND_RECT_DESC &amp;desc)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "highcount::RoundRectRenderer::DrawRect(citymaps::IGraphicsDevice*, citymaps::RenderState&amp;, highcount::ROUND_RECT_DESC&amp;)"
+                  moduleName = "High Count"
+                  urlString = "file://localhost/Users/adam/Documents/Projects/high-count/GameCode/Render/RoundRectRenderer.cpp"
+                  timestampString = "416678451.301855"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "391">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "highcount::RoundRectRenderer::DrawRect(citymaps::IGraphicsDevice*, citymaps::RenderState&amp;, highcount::ROUND_RECT_DESC&amp;)"
+                  moduleName = "High Count"
+                  urlString = "file://localhost/Users/adam/Documents/Projects/high-count/GameCode/Render/RoundRectRenderer.cpp"
+                  timestampString = "416678451.302367"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "504">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "highcount::RoundRectRenderer::DrawRect(citymaps::IGraphicsDevice*, citymaps::RenderState&amp;, highcount::ROUND_RECT_DESC&amp;)"
+                  moduleName = "High Count"
+                  urlString = "file://localhost/Users/adam/Documents/Projects/high-count/GameCode/Render/RoundRectRenderer.cpp"
+                  timestampString = "416678451.302861"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "599">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "High Count/HCGameView.mm"
+            timestampString = "416691854.082679"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-applicationInitialized:size:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HCGameView applicationInitialized:size:]"
+                  moduleName = "High Count"
+                  urlString = "file://localhost/Users/adam/Documents/Projects/high-count/iOS/High%20Count/High%20Count/HCGameView.mm"
+                  timestampString = "416678088.425192"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "2454">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HCGameView applicationInitialized:size:]"
+                  moduleName = "High Count"
+                  urlString = "file://localhost/Users/adam/Documents/Projects/high-count/iOS/High%20Count/High%20Count/HCGameView.mm"
+                  timestampString = "416678088.425884"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "2596">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HCGameView applicationInitialized:size:]"
+                  moduleName = "High Count"
+                  urlString = "file://localhost/Users/adam/Documents/Projects/high-count/iOS/High%20Count/High%20Count/HCGameView.mm"
+                  timestampString = "416678088.43044"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "3088">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

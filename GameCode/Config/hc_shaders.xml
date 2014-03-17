@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ShaderConfig>
+    <Shaders>
+        <Shader name="round_rect_vertex" filename="round_rect_vert.glsl" type="vertex" >
+            <GlobalData name="u_mvp" />
+        </Shader>
+        <Shader name="round_rect_fragment" filename="round_rect_frag.glsl" type="pixel" >
+            <GlobalData name="u_color" />
+            <GlobalData name="u_size" />
+            <GlobalData name="u_cornerRadius" />
+        </Shader>
+    </Shaders>
+    <ShaderPrograms>
+        <ShaderProgram name="round_rect">
+            <Shaders>
+                <Shader name="round_rect_vertex" />
+                <Shader name="round_rect_fragment" />
+            </Shaders>
+            <InputLayout>
+                <InputElement name="a_position" size="2" offset="0" />
+            </InputLayout>
+        </ShaderProgram>
+    </ShaderPrograms>
+</ShaderConfig>

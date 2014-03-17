@@ -9,25 +9,53 @@
 #pragma once
 
 #include "HC.h"
+#include "Animation/LinearAnimation.h"
+
+#include <CitymapsEngine/Core/Graphics/Shape/Label.h>
 
 namespace highcount
 {
-    class GridCell
+    static const int kGridCellSize = 65;
+    static const int kGridCellPadding = 10;
+    
+    struct GRID_CELL_ANIM_DESC
+    {
+        citymaps::Point endCell;
+        int newNumber;
+    };
+    
+    class GridCell : public ILinearAnimationListener
     {
     public:
-        GridCell(const Point &position) :
-            mPosition(position),
-            mNumber(-1)
-        {
-        }
-        
+        GridCell(int x, int y);
         ~GridCell()
         {
+            delete mLabel;
+        }
+        
+        const citymaps::Point& GetPosition() const { return mPosition; }
+        
+        void SetScreenOffset(const citymaps::Point &offset)
+        {
+            mOffset = offset;
         }
     
         void SetNumber(int number)
         {
-            mNumber = number;
+            if (number != mNumber) {
+                mNumber = number;
+                mNumberChanged = true;
+            }
+        }
+        
+        int GetNumber()
+        {
+            return mNumber;
+        }
+        
+        void DoubleNumber()
+        {
+            this->SetNumber(mNumber * 2);
         }
         
         bool HasSameNumber(const GridCell &other) const
@@ -43,11 +71,50 @@ namespace highcount
         
         bool IsEmpty() const
         {
-            return mNumber > 0;
+            return mNumber < 0;
         }
         
+        void SetPendingNumber(int newNumber)
+        {
+            mPendingNumber = newNumber;
+        }
+        
+        void Update(int deltaMillis);
+        void RenderBackground(IGraphicsDevice *device, RenderState &state, float contentScale);
+        void RenderNumber(IGraphicsDevice *device, RenderState &state, float contentScale);
+        
+        void AnimateTo(const citymaps::Point &end, float duration = 0.1f);
+    
+        bool IsAnimating() { return mAnimator.IsAnimating(); }
+        
+        /* ILinearAnimationListener */
+        void AnimationStart();
+        void AnimationStep(const citymaps::Point &position);
+        void AnimationEnd();
+        
     private:
-        Point mPosition;
+        citymaps::Point mPosition;
+        citymaps::Point mOffset;
         int mNumber;
+        Label *mLabel;
+        bool mNumberChanged;
+        
+        int mPendingNumber;
+        LinearAnimation mAnimator;
+        
+        citymaps::Point mScreenPosition;
+        citymaps::Point mNumberScreenPosition;
+        
+        static std::map<int, Vector4f> msColorMap;
+        
+        static citymaps::Point CalculateScreenPosition(const citymaps::Point &position, const citymaps::Point &offset)
+        {
+            citymaps::Point point;
+            int cellSize = kGridCellSize + kGridCellPadding;
+            point.x = (((cellSize * position.x) + kGridCellPadding) + offset.x);
+            point.y = (((cellSize * position.y) + kGridCellPadding) + offset.y);
+            
+            return point;
+        }
     };
 }

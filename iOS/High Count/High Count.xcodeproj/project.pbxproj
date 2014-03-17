@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6688811A18D5F9D600BF1BA3 /* RoundRectRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6688811818D5F9D600BF1BA3 /* RoundRectRenderer.cpp */; };
+		6688811B18D5FFDD00BF1BA3 /* hc_effects.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6688811318D5F50B00BF1BA3 /* hc_effects.xml */; };
+		6688811C18D5FFDF00BF1BA3 /* hc_shaders.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6688811518D5F51400BF1BA3 /* hc_shaders.xml */; };
+		6688860818D642A2004D672C /* CitymapsEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6688860718D642A2004D672C /* CitymapsEngine.framework */; };
+		6688860C18D64575004D672C /* LinearAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6688860A18D64575004D672C /* LinearAnimation.cpp */; };
 		669463F918D14B0C0082E6F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669463F818D14B0C0082E6F0 /* Foundation.framework */; };
 		669463FB18D14B0C0082E6F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669463FA18D14B0C0082E6F0 /* CoreGraphics.framework */; };
 		669463FD18D14B0C0082E6F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669463FC18D14B0C0082E6F0 /* UIKit.framework */; };
@@ -29,8 +34,9 @@
 		6694644518D15D3C0082E6F0 /* GameBoardController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6694644318D15D3C0082E6F0 /* GameBoardController.cpp */; };
 		6694644918D15D7C0082E6F0 /* GridBoard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6694644718D15D7C0082E6F0 /* GridBoard.cpp */; };
 		6694644C18D15D870082E6F0 /* GridCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6694644A18D15D870082E6F0 /* GridCell.cpp */; };
-		6694645518D163010082E6F0 /* CitymapsEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6694645418D163010082E6F0 /* CitymapsEngine.framework */; };
 		6694645818D163C60082E6F0 /* HCGameInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6694645618D163C60082E6F0 /* HCGameInstance.cpp */; };
+		669CC1EF18D6052400389C9D /* round_rect_vert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 6688810F18D5F31800BF1BA3 /* round_rect_vert.glsl */; };
+		669CC1F018D6052500389C9D /* round_rect_frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 6688811118D5F32200BF1BA3 /* round_rect_frag.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6688810C18D549B100BF1BA3 /* Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		6688810F18D5F31800BF1BA3 /* round_rect_vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = round_rect_vert.glsl; sourceTree = "<group>"; };
+		6688811118D5F32200BF1BA3 /* round_rect_frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = round_rect_frag.glsl; sourceTree = "<group>"; };
+		6688811318D5F50B00BF1BA3 /* hc_effects.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hc_effects.xml; sourceTree = "<group>"; };
+		6688811518D5F51400BF1BA3 /* hc_shaders.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hc_shaders.xml; sourceTree = "<group>"; };
+		6688811818D5F9D600BF1BA3 /* RoundRectRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RoundRectRenderer.cpp; sourceTree = "<group>"; };
+		6688811918D5F9D600BF1BA3 /* RoundRectRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundRectRenderer.h; sourceTree = "<group>"; };
+		6688860718D642A2004D672C /* CitymapsEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CitymapsEngine.framework; path = "../../../../SDKs/citymaps-ios-map-library/CitymapsEngine.framework"; sourceTree = "<group>"; };
+		6688860A18D64575004D672C /* LinearAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinearAnimation.cpp; sourceTree = "<group>"; };
+		6688860B18D64575004D672C /* LinearAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearAnimation.h; sourceTree = "<group>"; };
 		669463F518D14B0C0082E6F0 /* High Count.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "High Count.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		669463F818D14B0C0082E6F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		669463FA18D14B0C0082E6F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,7 +92,6 @@
 		6694644A18D15D870082E6F0 /* GridCell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GridCell.cpp; sourceTree = "<group>"; };
 		6694644B18D15D870082E6F0 /* GridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridCell.h; sourceTree = "<group>"; };
 		6694644D18D15DE10082E6F0 /* HC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HC.h; sourceTree = "<group>"; };
-		6694645418D163010082E6F0 /* CitymapsEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CitymapsEngine.framework; path = "../../../../SDKs/citymaps-ios-map-library/CitymapsEngine.framework"; sourceTree = "<group>"; };
 		6694645618D163C60082E6F0 /* HCGameInstance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HCGameInstance.cpp; sourceTree = "<group>"; };
 		6694645718D163C60082E6F0 /* HCGameInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCGameInstance.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6694645518D163010082E6F0 /* CitymapsEngine.framework in Frameworks */,
+				6688860818D642A2004D672C /* CitymapsEngine.framework in Frameworks */,
 				6694643B18D15BA50082E6F0 /* libstdc++.dylib in Frameworks */,
 				6694643918D15BA00082E6F0 /* SystemConfiguration.framework in Frameworks */,
 				669463FB18D14B0C0082E6F0 /* CoreGraphics.framework in Frameworks */,
@@ -108,6 +123,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6688810D18D5F2F800BF1BA3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6688811318D5F50B00BF1BA3 /* hc_effects.xml */,
+				6688811518D5F51400BF1BA3 /* hc_shaders.xml */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6688810E18D5F2F800BF1BA3 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				6688810F18D5F31800BF1BA3 /* round_rect_vert.glsl */,
+				6688811118D5F32200BF1BA3 /* round_rect_frag.glsl */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		6688811718D5F99000BF1BA3 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				6688811818D5F9D600BF1BA3 /* RoundRectRenderer.cpp */,
+				6688811918D5F9D600BF1BA3 /* RoundRectRenderer.h */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		6688860918D64404004D672C /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				6688860A18D64575004D672C /* LinearAnimation.cpp */,
+				6688860B18D64575004D672C /* LinearAnimation.h */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		669463EC18D14B0C0082E6F0 = {
 			isa = PBXGroup;
 			children = (
@@ -130,8 +181,8 @@
 		669463F718D14B0C0082E6F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6694645418D163010082E6F0 /* CitymapsEngine.framework */,
 				6694643A18D15BA50082E6F0 /* libstdc++.dylib */,
+				6688860718D642A2004D672C /* CitymapsEngine.framework */,
 				6694643818D15BA00082E6F0 /* SystemConfiguration.framework */,
 				6694643118D14D470082E6F0 /* CitymapsEngine.bundle */,
 				669463F818D14B0C0082E6F0 /* Foundation.framework */,
@@ -192,8 +243,12 @@
 		6694643018D14BCF0082E6F0 /* GameCode */ = {
 			isa = PBXGroup;
 			children = (
+				6688860918D64404004D672C /* Animation */,
+				6688810D18D5F2F800BF1BA3 /* Config */,
+				6688810E18D5F2F800BF1BA3 /* Shaders */,
 				6694644218D15D3C0082E6F0 /* Controllers */,
 				6694644618D15D730082E6F0 /* Object */,
+				6688811718D5F99000BF1BA3 /* Render */,
 				6694644D18D15DE10082E6F0 /* HC.h */,
 				6694645618D163C60082E6F0 /* HCGameInstance.cpp */,
 				6694645718D163C60082E6F0 /* HCGameInstance.h */,
@@ -207,6 +262,7 @@
 			children = (
 				6694644318D15D3C0082E6F0 /* GameBoardController.cpp */,
 				6694644418D15D3C0082E6F0 /* GameBoardController.h */,
+				6688810C18D549B100BF1BA3 /* Controller.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -300,6 +356,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6694640F18D14B0C0082E6F0 /* Main_iPad.storyboard in Resources */,
+				669CC1EF18D6052400389C9D /* round_rect_vert.glsl in Resources */,
+				669CC1F018D6052500389C9D /* round_rect_frag.glsl in Resources */,
+				6688811B18D5FFDD00BF1BA3 /* hc_effects.xml in Resources */,
+				6688811C18D5FFDF00BF1BA3 /* hc_shaders.xml in Resources */,
 				6694641418D14B0C0082E6F0 /* Images.xcassets in Resources */,
 				6694640C18D14B0C0082E6F0 /* Main_iPhone.storyboard in Resources */,
 				6694643318D14D470082E6F0 /* CitymapsEngine.bundle in Resources */,
@@ -324,6 +384,8 @@
 			files = (
 				6694644518D15D3C0082E6F0 /* GameBoardController.cpp in Sources */,
 				6694641218D14B0C0082E6F0 /* HCViewController.m in Sources */,
+				6688860C18D64575004D672C /* LinearAnimation.cpp in Sources */,
+				6688811A18D5F9D600BF1BA3 /* RoundRectRenderer.cpp in Sources */,
 				6694640518D14B0C0082E6F0 /* main.m in Sources */,
 				6694640918D14B0C0082E6F0 /* HCAppDelegate.m in Sources */,
 				6694644918D15D7C0082E6F0 /* GridBoard.cpp in Sources */,
@@ -470,9 +532,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/adam/Documents/SDKs/citymaps-ios-map-library/**",
+					"/Users/adam/Documents/SDKs/citymaps-ios-map-library",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "High Count/High Count-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					CELOGGER,
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -497,6 +565,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/adam/Documents/SDKs/citymaps-ios-map-library/**",
+					"/Users/adam/Documents/SDKs/citymaps-ios-map-library",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "High Count/High Count-Prefix.pch";
@@ -576,6 +645,7 @@
 				6694642C18D14B0C0082E6F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6694642D18D14B0C0082E6F0 /* Build configuration list for PBXNativeTarget "High CountTests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +654,7 @@
 				6694642F18D14B0C0082E6F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

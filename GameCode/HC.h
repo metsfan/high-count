@@ -7,4 +7,7 @@
 //
 
 #include <CitymapsEngine/CitymapsEngine.h>
+#include <CitymapsEngine/Core/Graphics/GraphicsDevice.h>
+#include <CitymapsEngine/Core/Graphics/RenderState.h>
+#include <CitymapsEngine/Core/Graphics/Shape/MeshShape.h>
 using namespace citymaps;
