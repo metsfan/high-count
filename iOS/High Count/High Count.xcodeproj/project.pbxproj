@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6611320718DA8FAA0051AB86 /* libMapEngineLibraryIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6611320618DA8FAA0051AB86 /* libMapEngineLibraryIOS.a */; };
 		6688811A18D5F9D600BF1BA3 /* RoundRectRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6688811818D5F9D600BF1BA3 /* RoundRectRenderer.cpp */; };
 		6688811B18D5FFDD00BF1BA3 /* hc_effects.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6688811318D5F50B00BF1BA3 /* hc_effects.xml */; };
 		6688811C18D5FFDF00BF1BA3 /* hc_shaders.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6688811518D5F51400BF1BA3 /* hc_shaders.xml */; };
-		6688860818D642A2004D672C /* CitymapsEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6688860718D642A2004D672C /* CitymapsEngine.framework */; };
 		6688860C18D64575004D672C /* LinearAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6688860A18D64575004D672C /* LinearAnimation.cpp */; };
 		669463F918D14B0C0082E6F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669463F818D14B0C0082E6F0 /* Foundation.framework */; };
 		669463FB18D14B0C0082E6F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669463FA18D14B0C0082E6F0 /* CoreGraphics.framework */; };
@@ -50,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6611320618DA8FAA0051AB86 /* libMapEngineLibraryIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMapEngineLibraryIOS.a; path = "../../../core-ios-client/MapEngineLibrary/MapEngineLibraryIOS/build/Debug-iphoneos/libMapEngineLibraryIOS.a"; sourceTree = "<group>"; };
 		6688810C18D549B100BF1BA3 /* Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		6688810F18D5F31800BF1BA3 /* round_rect_vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = round_rect_vert.glsl; sourceTree = "<group>"; };
 		6688811118D5F32200BF1BA3 /* round_rect_frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = round_rect_frag.glsl; sourceTree = "<group>"; };
@@ -101,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6688860818D642A2004D672C /* CitymapsEngine.framework in Frameworks */,
+				6611320718DA8FAA0051AB86 /* libMapEngineLibraryIOS.a in Frameworks */,
 				6694643B18D15BA50082E6F0 /* libstdc++.dylib in Frameworks */,
 				6694643918D15BA00082E6F0 /* SystemConfiguration.framework in Frameworks */,
 				669463FB18D14B0C0082E6F0 /* CoreGraphics.framework in Frameworks */,
@@ -181,6 +182,7 @@
 		669463F718D14B0C0082E6F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6611320618DA8FAA0051AB86 /* libMapEngineLibraryIOS.a */,
 				6694643A18D15BA50082E6F0 /* libstdc++.dylib */,
 				6688860718D642A2004D672C /* CitymapsEngine.framework */,
 				6694643818D15BA00082E6F0 /* SystemConfiguration.framework */,
@@ -326,6 +328,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Adam;
 				TargetAttributes = {
+					669463F418D14B0C0082E6F0 = {
+						DevelopmentTeam = 6KRKGENZ97;
+					};
 					6694641818D14B0C0082E6F0 = {
 						TestTargetID = 669463F418D14B0C0082E6F0;
 					};
@@ -529,6 +534,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Adam Eskreis (L367Q9DF84)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/adam/Documents/SDKs/citymaps-ios-map-library/**",
@@ -550,7 +556,12 @@
 					"/Users/adam/Documents/SDKs/citymaps-ios-map-library/CitymapsEngine.framework/Headers/Lib/freetype2/include",
 				);
 				INFOPLIST_FILE = "High Count/High Count-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/adam/Documents/Projects/core-ios-client/MapEngineLibrary/MapEngineLibraryIOS/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "81248AEA-EEF7-460A-AD92-C618314ED026";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../GameCode";
 				WRAPPER_EXTENSION = app;
 			};
@@ -562,6 +573,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/adam/Documents/SDKs/citymaps-ios-map-library/**",
@@ -578,7 +590,12 @@
 					"/Users/adam/Documents/SDKs/citymaps-ios-map-library/CitymapsEngine.framework/Headers/Lib/freetype2/include",
 				);
 				INFOPLIST_FILE = "High Count/High Count-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/adam/Documents/Projects/core-ios-client/MapEngineLibrary/MapEngineLibraryIOS/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "81248AEA-EEF7-460A-AD92-C618314ED026";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../GameCode";
 				WRAPPER_EXTENSION = app;
 			};

@@ -70,7 +70,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../GameCode/Object/GridBoard.cpp"
-            timestampString = "416715623.786231"
+            timestampString = "416988337.293653"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "GridBoard::Render(IGraphicsDevice *device, RenderState &amp;state, float contentScale)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../GameCode/Object/GridBoard.cpp"
+            timestampString = "416988814.838914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "264"
+            endingLineNumber = "264"
+            landmarkName = "GridBoard::AddSquare()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../GameCode/Object/GridBoard.cpp"
+            timestampString = "416988337.293653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
@@ -86,43 +118,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../GameCode/Object/GridBoard.cpp"
-            timestampString = "416715623.786231"
+            timestampString = "416988337.293653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236"
-            landmarkName = "GridBoard::AddSquare()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../GameCode/Object/GridBoard.cpp"
-            timestampString = "416715623.786231"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "GridBoard::Render(IGraphicsDevice *device, RenderState &amp;state, float contentScale)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../GameCode/Object/GridBoard.cpp"
-            timestampString = "416715585.519886"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "GridBoard::Update(int deltaMillis)"
             landmarkType = "5">
             <Locations>
@@ -220,11 +220,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../GameCode/Object/GridBoard.cpp"
-            timestampString = "416715585.519886"
+            timestampString = "416988337.293653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "GridBoard::Update(int deltaMillis)"
             landmarkType = "5">
          </BreakpointContent>
@@ -268,87 +268,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../GameCode/Object/GridBoard.cpp"
-            timestampString = "416716095.321355"
+            timestampString = "416988337.293653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
-            landmarkName = "GridBoard::ResolveSet(const std::vector&lt;GridCell *&gt; &amp;set)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../GameCode/Object/GridBoard.cpp"
-            timestampString = "416716095.321355"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
-            landmarkName = "GridBoard::ResolveSet(const std::vector&lt;GridCell *&gt; &amp;set)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "highcount::GridBoard::ResolveSet(std::__1::vector&lt;highcount::GridCell*, std::__1::allocator&lt;highcount::GridCell*&gt; &gt; const&amp;)"
-                  moduleName = "High Count"
-                  urlString = "file://localhost/Users/adam/Documents/Projects/high-count/GameCode/Object/GridBoard.cpp"
-                  timestampString = "416693061.080752"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "165"
-                  endingLineNumber = "165"
-                  offsetFromSymbolStart = "131">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "highcount::GridBoard::ResolveSet(std::__1::vector&lt;highcount::GridCell*, std::__1::allocator&lt;highcount::GridCell*&gt; &gt; const&amp;)"
-                  moduleName = "High Count"
-                  urlString = "file://localhost/Users/adam/Documents/Projects/high-count/GameCode/Object/GridBoard.cpp"
-                  timestampString = "416693061.081237"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "165"
-                  endingLineNumber = "165"
-                  offsetFromSymbolStart = "176">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "highcount::GridBoard::ResolveSet(std::__1::vector&lt;highcount::GridCell*, std::__1::allocator&lt;highcount::GridCell*&gt; &gt; const&amp;)"
-                  moduleName = "High Count"
-                  urlString = "file://localhost/Users/adam/Documents/Projects/high-count/GameCode/Object/GridBoard.cpp"
-                  timestampString = "416693061.081658"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "165"
-                  endingLineNumber = "165"
-                  offsetFromSymbolStart = "387">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../GameCode/Object/GridBoard.cpp"
-            timestampString = "416715623.786231"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "GridBoard::ShiftBoard(ShiftDirection direction)"
             landmarkType = "5">
             <Locations>
@@ -444,6 +368,70 @@
             startingLineNumber = "119"
             endingLineNumber = "119"
             landmarkName = "GridCell::AnimationEnd()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../GameCode/Object/GridBoard.cpp"
+            timestampString = "416988814.838914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "GridBoard::ResolveSet(const std::vector&lt;GridCell *&gt; &amp;set)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../GameCode/Object/GridBoard.cpp"
+            timestampString = "416988814.838914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "GridBoard::ResolveSet(const std::vector&lt;GridCell *&gt; &amp;set)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../GameCode/Object/GridBoard.cpp"
+            timestampString = "416988814.838914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
+            landmarkName = "GridBoard::AddSquare()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../GameCode/Object/GridBoard.cpp"
+            timestampString = "416988814.838914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
+            landmarkName = "GridBoard::ResolveSet(const std::vector&lt;GridCell *&gt; &amp;set)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

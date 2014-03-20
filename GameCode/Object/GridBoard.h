@@ -48,6 +48,11 @@ namespace highcount
             return mGrid[y * mSize.width + x];
         }
         
+        int GetIndex(const citymaps::Point &position)
+        {
+            return position.y * mSize.width + position.x;
+        }
+        
         void Update(int deltaMillis);
         void Render(IGraphicsDevice *device, RenderState &state, float contentScale);
         

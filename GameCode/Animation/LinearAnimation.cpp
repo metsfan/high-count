@@ -54,7 +54,7 @@ namespace highcount
             mRemaining -= deltaMillis;
             
             double percent = 1.0 - ((double)mRemaining / (double)mDuration);
-            printf("Percent: %f\n", percent);
+            
             mCurrentPoint = mStart + ((mEnd - mStart) * percent);
             
             if (mListener) {

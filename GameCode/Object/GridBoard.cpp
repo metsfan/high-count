@@ -28,6 +28,11 @@ namespace highcount
             }
         }
         
+        this->GetCell(3, 0).SetNumber(2);
+        this->GetCell(3, 1).SetNumber(4);
+        this->GetCell(3, 2).SetNumber(4);
+        this->GetCell(3, 3).SetNumber(8);
+        
         mBoardRenderSize.width = (size.width * kGridCellSize) + ((size.width + 1) * kGridCellPadding);
         mBoardRenderSize.height = (size.height * kGridCellSize) + ((size.height + 1) * kGridCellPadding);
         
@@ -160,8 +165,12 @@ namespace highcount
         for (int i = 0; i < set.size() - 1; i++) {
             if (!set[i]->IsEmpty()) {
                 for (int j = i + 1; j < set.size(); j++) {
-                    if (set[i]->HasSameNumber(*set[j])) {
-                        return true;
+                    if (!set[j]->IsEmpty()) {
+                        if (set[i]->HasSameNumber(*set[j])) {
+                            return true;
+                        }
+                        
+                        break;
                     }
                 }
             }
@@ -186,38 +195,57 @@ namespace highcount
     {
         int cursor = 0;
         
+        int sizeBefore = 0;
+        for (int i = 0; i < set.size(); i++) {
+            sizeBefore += mPendingNumbers[this->GetIndex(set[i]->GetPosition())];
+        }
         
-        for (int i = 0; i < set.size() - 1; i++) {
-            int indexI = (set[i]->GetPosition().y * mSize.width) + set[i]->GetPosition().x;
-            if (mPendingNumbers[indexI] > 0) {
+        for (int i = 0; i < set.size(); i++) {
+            int indexI = this->GetIndex(set[i]->GetPosition());
+            
+            if (mPendingNumbers[indexI] < 0) {
                 for (int j = i + 1; j < set.size(); j++) {
-                    if (set[i]->HasSameNumber(*set[j])) {
-                        
-                        int indexJ = (set[j]->GetPosition().y * mSize.width) + set[j]->GetPosition().x;
-                        
-                        mPendingNumbers[indexI] = mPendingNumbers[indexI] * 2;
+                    int indexJ = this->GetIndex(set[j]->GetPosition());
+                    
+                    if (mPendingNumbers[indexJ] > 0) {
+                        // Put number into set[0]
+                        mPendingNumbers[indexI] = mPendingNumbers[indexJ];
                         mPendingNumbers[indexJ] = -1;
+                        
                         set[j]->AnimateTo(set[i]->GetPosition());
-                        i = j;
+                        
+                        i--;
+                        break;
+                    }
+                }
+            } else {
+                for (int j = i + 1; j < set.size(); j++) {
+                    int indexJ = this->GetIndex(set[j]->GetPosition());
+                    
+                    if (mPendingNumbers[indexJ] > 0) {
+                        if (mPendingNumbers[indexJ] == mPendingNumbers[indexI]) {
+                            // Double value of set[0]
+                            mPendingNumbers[indexI] *= 2;
+                            mPendingNumbers[indexJ] = -1;
+                            
+                            set[j]->AnimateTo(set[i]->GetPosition());
+                        }
+                        
                         break;
                     }
                 }
             }
         }
         
+        int sizeAfter = 0;
         for (int i = 0; i < set.size(); i++) {
-            int indexI = (set[i]->GetPosition().y * mSize.width) + set[i]->GetPosition().x;
-            if (mPendingNumbers[indexI] > 0) {
-                int indexCursor = (set[cursor]->GetPosition().y * mSize.width) + set[cursor]->GetPosition().x;
-                if (mPendingNumbers[indexCursor] < 0) {
-                    mPendingNumbers[indexCursor] = mPendingNumbers[indexI];
-                    mPendingNumbers[indexI] = -1;
-                    set[i]->AnimateTo(set[cursor]->GetPosition());
-                }
-                
-                cursor++;
-            }
+            sizeAfter += mPendingNumbers[this->GetIndex(set[i]->GetPosition())];
         }
+        
+        if (sizeBefore < sizeAfter) {
+            int x = 0;
+        }
+        
     }
     
     void GridBoard::AddSquare()

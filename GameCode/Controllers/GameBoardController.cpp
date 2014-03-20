@@ -45,21 +45,24 @@ namespace highcount
                     
                 ShiftDirection shiftDirection;
                 
-                if (abs(dif.x) > abs(dif.y)) {
-                    if (dif.x > 0) {
-                        shiftDirection = ShiftDirectionRight;
+                if (abs(dif.x) > 20 || abs(dif.y) > 20) {
+                    if (abs(dif.x) > abs(dif.y)) {
+                        if (dif.x > 0) {
+                            shiftDirection = ShiftDirectionRight;
+                        } else {
+                            shiftDirection = ShiftDirectionLeft;
+                        }
                     } else {
-                        shiftDirection = ShiftDirectionLeft;
+                        if (dif.y > 0) {
+                            shiftDirection = ShiftDirectionDown;
+                        } else {
+                            shiftDirection = ShiftDirectionUp;
+                        }
                     }
-                } else {
-                    if (dif.y > 0) {
-                        shiftDirection = ShiftDirectionDown;
-                    } else {
-                        shiftDirection = ShiftDirectionUp;
-                    }
+                    
+                    mGridBoard.ShiftBoard(shiftDirection);
                 }
                 
-                mGridBoard.ShiftBoard(shiftDirection);
                 break;
             }
                 
