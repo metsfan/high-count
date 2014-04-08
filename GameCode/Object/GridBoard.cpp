@@ -28,10 +28,10 @@ namespace highcount
             }
         }
         
-        this->GetCell(3, 0).SetNumber(2);
-        this->GetCell(3, 1).SetNumber(4);
-        this->GetCell(3, 2).SetNumber(4);
-        this->GetCell(3, 3).SetNumber(8);
+        this->GetCell(0, 0).SetNumber(2);
+        this->GetCell(0, 1).SetNumber(2);
+        this->GetCell(0, 2).SetNumber(2);
+        this->GetCell(0, 3).SetNumber(2);
         
         mBoardRenderSize.width = (size.width * kGridCellSize) + ((size.width + 1) * kGridCellPadding);
         mBoardRenderSize.height = (size.height * kGridCellSize) + ((size.height + 1) * kGridCellPadding);
@@ -64,6 +64,7 @@ namespace highcount
             
             this->AddSquare();
         }
+        
     }
     
     void GridBoard::Render(IGraphicsDevice *device, RenderState &state, float contentScale)
@@ -146,6 +147,12 @@ namespace highcount
             moveValid = moveValid || this->ValidateSet(cellSets[i]);
         }
         
+        std::vector<GridAnimFrame> newGrid(16);
+        for (int i = 0; i < mGrid.size(); i++) {
+            newGrid[i].newNumber = mGrid[i].GetNumber();
+            newGrid[i].position = newGrid[i].newPosition = mGrid[i].GetPosition();
+        }
+        
         if (moveValid) {
             mPendingNumbers.resize(mGrid.size());
             for (int i = 0; i < mGrid.size(); i++) {
@@ -153,9 +160,16 @@ namespace highcount
             }
             
             for (int i = 0; i < cellSets.size(); i++) {
-                this->ResolveSet(cellSets[i]);
+                this->ResolveSet(cellSets[i], newGrid);
             }
             
+            for (int i = 0; i < newGrid.size(); i++) {
+                mGrid[i].AnimateTo(newGrid[i].newPosition);
+                mPendingNumbers[i] = newGrid[i].newNumber;
+                //mGrid[i].SetNumber(newGrid[i].newNumber);
+            }
+            
+            //this->AddSquare();
         }
         
     }
@@ -191,61 +205,57 @@ namespace highcount
         return false;
     }
     
-    void GridBoard::ResolveSet(const std::vector<GridCell *> &set)
+    void GridBoard::ResolveSet(const std::vector<GridCell *> &set, std::vector<GridAnimFrame> &newGrid)
     {
+        std::vector<int32_t> newNumbers(4);
+        
         int cursor = 0;
-        
-        int sizeBefore = 0;
-        for (int i = 0; i < set.size(); i++) {
-            sizeBefore += mPendingNumbers[this->GetIndex(set[i]->GetPosition())];
-        }
-        
-        for (int i = 0; i < set.size(); i++) {
-            int indexI = this->GetIndex(set[i]->GetPosition());
-            
-            if (mPendingNumbers[indexI] < 0) {
-                for (int j = i + 1; j < set.size(); j++) {
-                    int indexJ = this->GetIndex(set[j]->GetPosition());
-                    
-                    if (mPendingNumbers[indexJ] > 0) {
-                        // Put number into set[0]
-                        mPendingNumbers[indexI] = mPendingNumbers[indexJ];
-                        mPendingNumbers[indexJ] = -1;
-                        
-                        set[j]->AnimateTo(set[i]->GetPosition());
-                        
-                        i--;
-                        break;
-                    }
-                }
-            } else {
-                for (int j = i + 1; j < set.size(); j++) {
-                    int indexJ = this->GetIndex(set[j]->GetPosition());
-                    
-                    if (mPendingNumbers[indexJ] > 0) {
-                        if (mPendingNumbers[indexJ] == mPendingNumbers[indexI]) {
-                            // Double value of set[0]
-                            mPendingNumbers[indexI] *= 2;
-                            mPendingNumbers[indexJ] = -1;
-                            
-                            set[j]->AnimateTo(set[i]->GetPosition());
-                        }
-                        
-                        break;
-                    }
-                }
+        for (int i = 0; i < 4; i++) {
+            if (!set[i]->IsEmpty()) {
+                int index = this->GetIndex(set[i]->GetPosition());
+                newNumbers[cursor] = set[i]->GetNumber();
+                
+                newGrid[index].newPosition = set[cursor]->GetPosition();
+                
+                
+                cursor++;
             }
         }
         
-        int sizeAfter = 0;
-        for (int i = 0; i < set.size(); i++) {
-            sizeAfter += mPendingNumbers[this->GetIndex(set[i]->GetPosition())];
+        int lastNum = -1;
+        for (int i = 0; i < 4; i++) {
+            if (!newNumbers[i] || newNumbers[i] < 0) {
+                continue;
+            }
+            
+            if (lastNum > 0) {
+                if (newNumbers[i] == newNumbers[i-1]) {
+                    newNumbers[i-1] *= 2;
+                    
+                    int index = this->GetIndex(set[i]->GetPosition());
+                    newGrid[index].newPosition = set[i-1]->GetPosition();
+                    
+                    for (int j = i+1; j < 4; j++) {
+                        newNumbers[j-1] = newNumbers[j];
+                        
+                        int index = this->GetIndex(set[j]->GetPosition());
+                        newGrid[index].newPosition = set[j-1]->GetPosition();
+                    }
+                    newNumbers[3] = 0;
+                    lastNum = -1;
+                    i--;
+                } else {
+                    lastNum = newNumbers[i];
+                }
+            } else {
+                lastNum = newNumbers[i];
+            }
         }
         
-        if (sizeBefore < sizeAfter) {
-            int x = 0;
+        for (int i = 0; i < 4; i++) {
+            int index = this->GetIndex(set[i]->GetPosition());
+            newGrid[index].newNumber = newNumbers[i];
         }
-        
     }
     
     void GridBoard::AddSquare()

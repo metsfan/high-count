@@ -27,6 +27,13 @@ namespace highcount
         virtual void OnGameOver() = 0;
     };
     
+    struct GridAnimFrame
+    {
+        int32_t newNumber;
+        citymaps::Point position;
+        citymaps::Point newPosition;
+    };
+    
     class GridBoard
     {
     public:
@@ -70,6 +77,6 @@ namespace highcount
         
         void AddSquare();
         bool ValidateSet(const std::vector<GridCell *> &set);
-        void ResolveSet(const std::vector<GridCell *> &set);
+        void ResolveSet(const std::vector<GridCell *> &set, std::vector<GridAnimFrame> &newGrid);
     };
 };

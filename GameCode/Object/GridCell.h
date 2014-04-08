@@ -71,7 +71,7 @@ namespace highcount
         
         bool IsEmpty() const
         {
-            return mNumber < 0;
+            return mNumber <= 0;
         }
         
         void SetPendingNumber(int newNumber)
